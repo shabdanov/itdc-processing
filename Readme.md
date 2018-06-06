@@ -11,3 +11,7 @@
 Вопросы и ответы по темам курса
 
 * <https://piazza.com/auca.kg/summer2018/itdcprocessing101>
+
+## Записи и вещание занятий
+
+* <https://www.youtube.com/playlist?list=PLIWindejDy9BUFeR25HXU8OvTgmKi9cmb>

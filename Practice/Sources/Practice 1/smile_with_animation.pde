@@ -4,6 +4,7 @@ void setup() {
 }
 
 void draw() {
+  background(0);
   drawSmile(
     (int) random(width),
     (int) random(height),
@@ -11,7 +12,7 @@ void draw() {
     0xFF000000 | (int) random(16581375)
   );
 
-  delay(100); // задержка между рисованием в миллисекундах
+  delay(100); // Задержка между рисованием в миллисекундах.
 }
 
 void drawSmile(int faceX, int faceY, int faceSize, int faceColor) {
@@ -27,7 +28,7 @@ void drawSmile(int faceX, int faceY, int faceSize, int faceColor) {
   int eyesY = faceY - eyeYShift;
   int eyeColor = 0;
   int eyeSize  = (int) (faceSize / 7.5f);
-  
+
   fill(eyeColor);
   ellipse(leftEyeX, eyesY, eyeSize, eyeSize);
   ellipse(rightEyeX, eyesY, eyeSize, eyeSize);
@@ -39,7 +40,7 @@ void drawSmile(int faceX, int faceY, int faceSize, int faceColor) {
   int noseX = faceX - noseWidth / 2;
   int noseY = faceY;
   int noseColor = 0;
-  
+
   fill(noseColor);
   rect(noseX, noseY, noseWidth, noseHeight, noseCornerRadius);
 
@@ -52,7 +53,7 @@ void drawSmile(int faceX, int faceY, int faceSize, int faceColor) {
   int mouthSmileYShift = (int) (faceSize / 30.0f);
   int mouthSmileY = mouthY - mouthSmileYShift;
   int mouthColor = 0;
-  
+
   fill(mouthColor);
   ellipse(mouthX, mouthY, mouthWidth, mouthHeight);
   noStroke();
